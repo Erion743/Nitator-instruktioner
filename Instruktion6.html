@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="sv">
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instruktion 1 - Nitator AB</title>
+    <link rel="stylesheet" href="stylesheet1.css"> <!-- Hänvisa till samma CSS-fil -->
+</head>
+<body>
+
+    <header>
+        <h1>Instruktion 1 - Montering</h1>
+        <p>Beskrivning av instruktion 1.</p>
+    </header>
+
+    <main>
+        <div class="side-panel">
+            <h2>Denna video hänvisar till ---:</h2>
+            <ul>
+            </ul>
+        </div>
+
+        <!-- Video Modal -->
+        <div class="video-container">
+            <div class="video-modal" id="videoModal">
+                <div class="video-modal-content">
+                    <span class="close-btn" onclick="closeVideo()">&times;</span>
+                    <video id="videoPlayer" width="800" controls>
+                        <source src="" type="video/mp4">
+                        Din webbläsare stödjer inte videouppspelning.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Nitator AB. Alla rättigheter förbehållna.</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Lägg till denna fil om den inte redan finns -->
+</body>
+</html>
+
