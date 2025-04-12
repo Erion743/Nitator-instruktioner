@@ -1,0 +1,298 @@
+/* Grundläggande layout för förstasidan */
+.home-page {
+    font-family: Arial, sans-serif;
+}
+
+    /* Header-stil */
+    .home-page header {
+        text-align: center;
+        padding: 40px 20px;
+        background: linear-gradient(135deg, #1E3C72, #2A5298);
+        color: white;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        border-bottom: 3px solid #1A3D6C;
+        margin-bottom: 20px;
+    }
+
+        .home-page header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        .home-page header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+/* Container för sidopanel och huvuddel */
+.container {
+    display: flex;
+    margin: 20px;
+}
+
+/* Sidopanel */
+.sidebar {
+    width: 25%;
+    background-color: #2A5298;
+    padding: 20px;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+    .sidebar h2 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+        border-bottom: 3px solid #16335F;
+        padding-bottom: 10px;
+    }
+
+    .sidebar ul {
+        list-style: none;
+        padding: 0;
+    }
+
+        .sidebar ul li {
+            margin-bottom: 15px;
+        }
+
+            .sidebar ul li a {
+                font-size: 1.4rem;
+                color: white;
+                text-decoration: none;
+                display: inline-block;
+                padding-bottom: 6px;
+                transition: color 0.3s ease, border-color 0.3s ease;
+            }
+
+                .sidebar ul li a:hover {
+                    color: #f1f6fc;
+                    border-bottom: 2px solid #f1f6fc;
+                }
+
+/* Huvuddel */
+.main-content {
+    width: 70%;
+    padding: 20px;
+    background-color: #f1f6fc;
+    margin-left: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+    .main-content h3 {
+        font-size: 2rem;
+        color: #1E3C72;
+    }
+
+    .main-content p {
+        font-size: 1.2rem;
+        color: #333;
+    }
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #2A5298;
+    color: white;
+    margin-top: 40px;
+}
+/* Grundläggande layout för förstasidan */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f1f6fc;
+}
+
+/* Header-stil */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #1E3C72, #2A5298);
+    color: white;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #1A3D6C;
+}
+
+    header h1 {
+        font-size: 2.8rem; /* Större titel */
+        margin: 0;
+    }
+
+    header p {
+        font-size: 1.4rem;
+        margin-top: 10px;
+    }
+
+/* Centrera video-container och gör den responsiv */
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh; /* Gör höjden på videon relativ till skärmens höjd */
+    margin-top: 20px;
+}
+
+.video-modal {
+    max-width: 90%; /* Maximalt 90% av skärmens bredd */
+    width: 800px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.video-modal-content {
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2rem;
+    color: #333;
+    cursor: pointer;
+}
+
+    .close-btn:hover {
+        color: #1E3C72;
+    }
+
+/* Förbättra sidopanelen */
+.side-panel {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #2A5298;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+    .side-panel h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+        border-bottom: 3px solid #16335F;
+        padding-bottom: 10px;
+    }
+
+    .side-panel ul {
+        list-style: none;
+        padding: 0;
+    }
+
+        .side-panel ul li {
+            margin-bottom: 15px;
+        }
+
+            .side-panel ul li a {
+                font-size: 1.5rem; /* Större länktext */
+                color: white;
+                text-decoration: none;
+                display: inline-block;
+                padding-bottom: 6px;
+                transition: color 0.3s ease, border-color 0.3s ease;
+            }
+
+                .side-panel ul li a:hover {
+                    color: #f1f6fc;
+                    border-bottom: 2px solid #f1f6fc;
+                }
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #2A5298;
+    color: white;
+    margin-top: 40px;
+}
+
+/* Responsiv design för mindre skärmar */
+@media (max-width: 768px) {
+    .video-modal {
+        width: 100%; /* Gör videon responsiv för mobila enheter */
+        height: auto;
+    }
+
+    header h1 {
+        font-size: 2.2rem; /* Minska storleken på rubriken på mindre skärmar */
+    }
+
+    .side-panel h2 {
+        font-size: 1.6rem; /* Minska storleken på sidopanelens rubrik på mindre skärmar */
+    }
+
+    .side-panel ul li a {
+        font-size: 1.3rem; /* Justera länktextens storlek för mindre skärmar */
+    }
+}
+/* Förbättra sidopanelens rubrik med en bakgrundsbar */
+.side-panel h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold; /* Gör texten tjockare */
+    border-bottom: 3px solid #16335F;
+    padding: 10px 20px; /* Lägg till padding för att skapa utrymme */
+    background-color: #1E3C72; /* Bakgrundsfärg för att framhäva rubriken */
+    color: white; /* Ändra textfärg till vit för bättre kontrast */
+}
+
+/* Sidolänkar med bakgrundseffekt vid hover */
+.side-panel ul li a {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding-bottom: 6px;
+    transition: color 0.3s ease, border-color 0.3s ease;
+    position: relative;
+}
+
+    .side-panel ul li a:hover {
+        color: #f1f6fc;
+        border-bottom: 2px solid #f1f6fc;
+    }
+
+    .side-panel ul li a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 3px;
+        background-color: #f1f6fc;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+
+    .side-panel ul li a:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+/* Styla tillbaka-knappen */
+.back-button {
+    display: inline-block;
+    background-color: #1E3C72;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+    .back-button:hover {
+        background-color: #2A5298; /* Ljusare blå när musen är över */
+    }
+    

@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Sökresultat</title>
+    <link rel="stylesheet" href="{% static 'mainapp/stylesheet1.css' %}">
+</head>
+<body class="home-page">
+
+    <header>
+        <h1>Sökresultat</h1>
+        <p>Resultat för: <strong>{{ query }}</strong></p>
+    </header>
+
+    <div class="container">
+        {% if resultat %}
+            <ul>
+                {% for nummer in resultat %}
+                    <li><a href="{% url 'instruktion_detail' artikelnummer=nummer %}">Instruktion {{ nummer }}</a></li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>Inga resultat hittades för "{{ query }}"</p>
+        {% endif %}
+    </div>
+
+    <footer>
+        <p><a href="{% url 'index' %}">⬅ Tillbaka till startsidan</a></p>
+    </footer>
+    
+</body>
+</html>

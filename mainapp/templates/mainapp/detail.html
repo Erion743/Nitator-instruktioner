@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Instruktion {{ artikelnummer }}</title>
+    <link rel="stylesheet" href="{% static 'mainapp/stylesheet1.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Instruktion {{ artikelnummer }} - Video</h1>
+        <p>Här är en video för instruktion nummer {{ artikelnummer }}.</p>
+    </header>
+
+    <main>
+        <div class="video-container" style="display: flex; justify-content: center;">
+          <video width="960" height="540" controls>
+            <source src="{% static video %}" type="video/mp4">
+            Din webbläsare stödjer inte videouppspelning.
+          </video>
+        </div>
+      </main>
+      
+
+    <footer>
+        <p>&copy; 2025 Nitator AB. Alla rättigheter förbehållna.</p>
+    </footer>
+</body>
+</html>
